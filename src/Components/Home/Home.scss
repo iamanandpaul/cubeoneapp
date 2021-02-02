@@ -1,0 +1,204 @@
+.home {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(../../assets/bg-img/welcome-bg.jpg);
+
+    .home__contents {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-top: 22vh;
+        padding-left: 12vw;
+
+        & > h2 {
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.3;
+            margin-top: -120px;
+            margin-left: -40px;
+        }
+
+        & > h1 {
+            font-size: 90px;
+            margin-bottom: 10px;
+        }
+
+        & > h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+
+            & > span {
+                font-style: italic;
+            }
+        }
+
+        & > img {
+            width: 150px;
+            height: 150px;
+            margin-left: 6%;
+            margin-top: 10%;
+            margin-bottom: 20px;
+        }
+    }
+    & > img {
+        margin-top: 11vh;
+        width: 610px;
+        height: 610px;
+        margin-right: 8vw;
+        animation: slide 2s;
+
+        @keyframes slide {
+            0% {
+                margin-top: 0;
+                opacity: 0;
+            }
+            100% {
+                margin-top: 11vh;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home {
+        & > img {
+            margin-top: 11vh;
+            width: 610px;
+            height: 610px;
+            margin-right: 0;
+            animation: slide 2s;
+
+            @keyframes slide {
+                0% {
+                    margin-top: 0;
+                    opacity: 0;
+                }
+                100% {
+                    margin-top: 80px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1062px) {
+    .home {
+        & > img {
+            margin-top: 15vh;
+            width: 510px;
+            height: 510px;
+            margin-right: 3vw;
+            animation: slide 2s;
+
+            @keyframes slide {
+                0% {
+                    margin-top: 0;
+                    opacity: 0;
+                }
+                100% {
+                    margin-top: 80px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .home {
+        & > img {
+            margin-top: 20vh;
+            width: 400px;
+            height: 400px;
+            margin-right: 1vw;
+            animation: slide 2s;
+
+            @keyframes slide {
+                0% {
+                    margin-top: 0;
+                    opacity: 0;
+                }
+                100% {
+                    margin-top: 80px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .home {
+        display: flex;
+        justify-content: center;
+
+        & > img {
+            display: none;
+        }
+        .home__contents {
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+
+            & > h2 {
+                margin-top: -14vh;
+                margin-left: -55vw;
+            }
+
+            & > img {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .home {
+        display: flex;
+        justify-content: center;
+
+        & > img {
+            display: none;
+        }
+        .home__contents {
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+
+            & > h2 {
+                position: absolute;
+                font-size: 250px;
+                opacity: 0.3;
+                margin-top: -100px;
+                margin-left: -20px;
+            }
+
+            & > h1 {
+                font-size: 70px;
+                margin-bottom: 10px;
+            }
+
+            & > h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            & > img {
+                width: 100px;
+                height: 100px;
+                margin-left: 6%;
+                margin-top: 10%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

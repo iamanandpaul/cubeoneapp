@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    background-color: white;
 
     .header__logo {
         margin: 1vh 0 1vh 8vw;
@@ -25,7 +26,7 @@
                 align-items: center;
                 text-decoration: none;
                 color: rgb(80, 80, 80);
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 15px;
 
                 .header__icons {
@@ -49,29 +50,35 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
     .header {
         .header__main {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            padding: 0;
+            width: 100%;
             align-items: center;
             border-radius: 5px;
-            width: 80%;
-            height: 35vh;
+            height: 88vh;
             position: absolute;
-            top: 52px;
+            top: 12vh;
             right: -100%;
             opacity: 1;
             transition: all 0.5s ease;
             padding-top: 20px;
-            margin-right: 2vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../../assets/bg-img/welcome-bg.jpg);
 
             .header__options {
-                border-bottom: solid 1px rgb(216, 216, 216);
-                width: 100%;
                 display: flex;
                 justify-content: center;
+                border-bottom: solid 2px rgb(216, 216, 216);
+                width: 80%;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
 
                 .header__links {
                     display: flex;
@@ -90,19 +97,18 @@
             opacity: 1;
             transition: all 0.5s ease;
             z-index: 1;
-            background-color: rgb(185, 14, 14);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../../assets/bg-img/welcome-bg.jpg);
 
             .header__options {
-                border-bottom: solid 1px rgb(216, 216, 216);
-                width: 100%;
-                display: flex;
-                justify-content: center;
+                border-bottom: solid 2px rgb(216, 216, 216);
+                width: 80%;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
 
                 .header__links {
-                    display: flex;
-                    align-items: center;
-                    padding: 7px;
-                    color: rgb(80, 80, 80);
                     font-weight: 700;
                     font-size: 15px;
                     color: white;
@@ -114,6 +120,7 @@
             display: block;
             margin-right: 15px;
             cursor: pointer;
+
             .header__clickicon {
                 width: 40px;
                 height: 40px;

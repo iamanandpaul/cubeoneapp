@@ -1,0 +1,31 @@
+.button__home {
+    padding: 12px 15px;
+    border-radius: 25px 25px 25px 0;
+    border: solid 2px rgb(194, 194, 194);
+    background-color: white;
+    font-size: 16px;
+    font-weight: 550;
+    color: red;
+    transition: all 0.5s ease;
+    width: 200px;
+    animation: button 2s;
+
+    @keyframes button {
+        0% {
+            margin-top: 40px;
+            opacity: 0;
+        }
+        100% {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+}
+
+.button__home:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: all 0.5s ease;
+    border-color: white;
+}
