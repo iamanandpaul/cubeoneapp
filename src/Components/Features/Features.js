@@ -42,22 +42,22 @@ function Features() {
           <img src={features2} alt="features" />
           <div className="features__contents">
             <Content
-              image="utilitybillspayments"
+              image="onlinebusiness"
               title="Get trained and take your business online"
               desc="Doing business online is the need for this Covid-19 situation. Don’t stay back. Take your business online easily with oneapp and our expert training support."
             />
             <Content
-              image="grocery"
+              image="pointofsale"
               title="Increase your reach"
               desc="Don’t let this pandemic hamper your business. Get listed in oneapp and open your door to the customers seeking online services. Reach your customers in your neighborhood and beyond."
             />
             <Content
-              image="orderfood"
+              image="socialdistance"
               title="Manage business maintaining social distance"
               desc="Adhere to social distancing without affecting your business. Receive orders online and serve customers with deliveries & scheduled pick-ups. Avoid crowding in front of the store to maintain your and your customers’ health."
             />
             <Content
-              image="safety"
+              image="customerrelationship"
               title="Serve more customers"
               desc="No crowd allowed in front of the store due to lockdown? Doesn’t have to necessarily mean reduced business. Serve your customers online. Receive order in your mobile phone and schedule delivery or pickup as per convenience maintaining the new norms of the society."
             />
