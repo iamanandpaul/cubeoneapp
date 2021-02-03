@@ -151,8 +151,11 @@
             padding-left: 0;
 
             & > h2 {
-                margin-top: -14vh;
-                margin-left: -55vw;
+                position: absolute;
+                font-size: 250px;
+                opacity: 0.3;
+                margin-top: -100px;
+                margin-left: -4vw;
             }
 
             & > img {
