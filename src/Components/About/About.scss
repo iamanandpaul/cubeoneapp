@@ -193,3 +193,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 350px) {
+    .about {
+        .about__second {
+            .about__main {
+                & > img {
+                    width: 232px;
+                    height: 400px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

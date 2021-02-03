@@ -8,6 +8,7 @@
     z-index: 100;
     background-color: white;
     height: 75px;
+    box-shadow: 0 5px 50px rgb(223, 223, 223);
 
     .header__logo {
         margin: 1vh 0 1vh 8vw;
@@ -61,7 +62,7 @@
             width: 100%;
             align-items: center;
             border-radius: 5px;
-            height: 88vh;
+            height: 78vh;
             position: absolute;
             top: 75px;
             right: -101%;
