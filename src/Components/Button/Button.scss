@@ -3,12 +3,16 @@
     border-radius: 25px 25px 25px 0;
     border: solid 2px rgb(194, 194, 194);
     background-color: white;
-    font-size: 16px;
-    font-weight: 550;
-    color: red;
     transition: all 0.5s ease;
     width: 200px;
+    outline: none;
     animation: button 2s;
+
+    & > div > h6 {
+        font-size: 16px;
+        font-weight: 550;
+        color: red;
+    }
 
     @keyframes button {
         0% {
@@ -21,11 +25,73 @@
         }
     }
 }
-
 .button__home:hover {
     cursor: pointer;
-    color: white;
     background-color: red;
     transition: all 0.5s ease;
     border-color: white;
+
+    & > div > h6 {
+        color: white;
+    }
+}
+
+.button__about {
+    display: flex;
+    justify-content: center;
+    padding: 12px 15px;
+    border-radius: 25px 25px 25px 0;
+    border: none;
+    background-color: rgb(212, 14, 14);
+    transition: all 0.5s ease;
+    width: 220px;
+    outline: none;
+
+    .button__icons {
+        color: white;
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > h6 {
+            font-size: 12px;
+            font-weight: 550;
+            color: white;
+            margin-left: 2px;
+        }
+
+        & > h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+    }
+}
+.button__about:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    animation: jump 2s ease;
+
+    @keyframes jump {
+        0% {
+            transform: translateY(2px);
+            opacity: 0.9;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .button__icons {
+        color: white;
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+    }
 }
