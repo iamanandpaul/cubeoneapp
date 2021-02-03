@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: fit-content;
+    height: auto;
     background-image: url(../../assets/bg-img/welcome-bg.jpg);
 
     .home__contents {
@@ -180,7 +180,7 @@
                 font-size: 250px;
                 opacity: 0.3;
                 margin-top: -100px;
-                margin-left: -20px;
+                margin-left: -4vw;
             }
 
             & > h1 {

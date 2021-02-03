@@ -33,32 +33,6 @@ function About() {
           />
         </div>
       </div>
-      <div className="about__second">
-        <img src={aboutimage} alt="About" />
-        <div className="about__secondcontents">
-          <h1>Our best offer for your comfort!</h1>
-          <p>
-            The world has changed. And it’s time to change your way of living
-            and doing business. Make <em>oneapp</em> your trusted partner and be
-            <em> aatmanirbhar</em> in this new way of the world. Try it, to
-            believe it. Download <em>oneapp</em> now!
-          </p>
-          <div className="about__buttons">
-            <Button
-              display="button__about"
-              img="AndroidIcon"
-              title="download on the"
-              app="Google Store"
-            />
-            <Button
-              display="button__about"
-              img="AppleIcon"
-              title="download on the"
-              app="Apple Store"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
