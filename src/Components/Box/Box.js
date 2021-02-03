@@ -6,7 +6,15 @@ import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 
 function Box({ image, title, desc }) {
   return (
-    <div className="box">
+    <div
+      className={
+        image === "PhoneIphoneIcon"
+          ? "box1"
+          : image === "HomeOutlinedIcon"
+          ? "box2"
+          : "box3"
+      }
+    >
       {image === "PhoneIphoneIcon" ? (
         <PhoneIphoneIcon className="box__icons" />
       ) : image === "HomeOutlinedIcon" ? (
