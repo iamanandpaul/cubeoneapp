@@ -3,6 +3,7 @@ import "./Home.scss";
 import barcode from "../../assets/core-img/barcode.png";
 import Button from "../Button/Button";
 import oneapp from "../../assets/bg-img/welcome-img.png";
+import Fade from "react-reveal/Fade";
 
 function Home() {
   return (
@@ -14,9 +15,13 @@ function Home() {
           All you need for an <span>aatmanirbhar</span> living
         </h4>
         <img className="home__barcode" src={barcode} alt="barcode" />
-        <Button display="button__home" title="Download Now" />
+        <Fade bottom delay="200">
+          <Button display="button__home" title="Download Now" />
+        </Fade>
       </div>
-      <img src={oneapp} alt="" />
+      <Fade top delay="200" distance="10vh">
+        <img src={oneapp} alt="" />
+      </Fade>
     </div>
   );
 }
