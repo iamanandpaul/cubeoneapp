@@ -7,6 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
+    position: relative;
+    z-index: 1;
     background-image: url(../../assets/bg-img/welcome-bg.jpg);
 
     .home__contents {
