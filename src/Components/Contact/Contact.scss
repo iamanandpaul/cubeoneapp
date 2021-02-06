@@ -1,0 +1,307 @@
+.contact {
+    display: flex;
+    width: 100%;
+    background-color: #f5f9fc;
+    margin: 40px 0 200px 0;
+    padding: 50px 0;
+    box-shadow: rgb(202, 202, 202) 0px 20px 30px -20px;
+
+    .contact__main {
+        display: flex;
+        width: 78%;
+        margin: 0 12%;
+        justify-content: space-between;
+
+        .contact__left {
+            display: flex;
+            flex-direction: column;
+
+            & > p {
+                margin: 50px 0;
+                color: gray;
+                font-weight: 600;
+            }
+            & > span {
+                display: flex;
+                color: red;
+                font-size: 18px;
+                margin-bottom: 20px;
+                font-weight: 500;
+
+                & > h4 {
+                    color: gray;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .contact__right {
+            & > form {
+                display: flex;
+                flex-direction: column;
+
+                & > input {
+                    border-radius: 25px 25px 25px 0;
+                    margin: 10px 0;
+                    padding: 0 15px;
+                    width: 35vw;
+                    outline: none;
+                    height: 50px;
+                    font-size: 17px;
+                    font-weight: 500;
+                    border: solid 2px rgb(219, 219, 219);
+                }
+
+                & > textarea {
+                    border-radius: 25px 25px 25px 0;
+                    padding: 10px 15px;
+                    font-size: 17px;
+                    font-weight: 500;
+                    outline: none;
+                    margin: 10px 0 20px 0;
+                    border: solid 1px gray;
+                    resize: vertical;
+                }
+
+                ::placeholder {
+                    color: rgb(255, 148, 148);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact {
+        display: flex;
+        width: 100%;
+        background-color: #f5f9fc;
+        margin: 40px 0 200px 0;
+        padding: 50px 0;
+        box-shadow: rgb(202, 202, 202) 0px 20px 30px -20px;
+
+        .contact__main {
+            display: flex;
+            width: 82%;
+            margin: 0 8%;
+            justify-content: space-between;
+
+            .contact__left {
+                display: flex;
+                flex-direction: column;
+
+                & > p {
+                    margin: 50px 0;
+                    color: gray;
+                    font-weight: 600;
+                }
+                & > span {
+                    display: flex;
+                    color: red;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+
+                    & > h4 {
+                        color: gray;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .contact__right {
+                & > form {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > input {
+                        border-radius: 25px 25px 25px 0;
+                        margin: 10px 0;
+                        padding: 0 15px;
+                        width: 30vw;
+                        outline: none;
+                        height: 50px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        border: solid 2px rgb(219, 219, 219);
+                    }
+
+                    & > textarea {
+                        border-radius: 25px 25px 25px 0;
+                        padding: 10px 15px;
+                        font-size: 17px;
+                        width: 30vw;
+                        font-weight: 500;
+                        outline: none;
+                        margin: 10px 0 20px 0;
+                        border: solid 1px gray;
+                        resize: vertical;
+                    }
+
+                    ::placeholder {
+                        color: rgb(255, 148, 148);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        display: flex;
+        width: 100%;
+        background-color: #f5f9fc;
+        margin: 40px 0 200px 0;
+        padding: 50px 0;
+        box-shadow: rgb(202, 202, 202) 0px 20px 30px -20px;
+
+        .contact__main {
+            display: flex;
+            width: 80%;
+            margin: 0 10%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .contact__left {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+
+                & > p {
+                    margin: 50px 0;
+                    color: gray;
+                    font-weight: 600;
+                }
+                & > span {
+                    display: flex;
+                    color: red;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+
+                    & > h4 {
+                        color: gray;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .contact__right {
+                & > form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+
+                    & > input {
+                        border-radius: 25px 25px 25px 0;
+                        margin: 10px 0;
+                        padding: 0 15px;
+                        width: 70vw;
+                        outline: none;
+                        height: 50px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        border: solid 2px rgb(219, 219, 219);
+                    }
+
+                    & > textarea {
+                        border-radius: 25px 25px 25px 0;
+                        padding: 10px 15px;
+                        font-size: 17px;
+                        width: 70vw;
+                        font-weight: 500;
+                        outline: none;
+                        margin: 10px 0 20px 0;
+                        border: solid 1px gray;
+                        resize: vertical;
+                    }
+
+                    ::placeholder {
+                        color: rgb(255, 148, 148);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact {
+        display: flex;
+        width: 100%;
+        background-color: #f5f9fc;
+        margin: 40px 0 200px 0;
+        padding: 50px 0;
+        box-shadow: rgb(202, 202, 202) 0px 20px 30px -20px;
+
+        .contact__main {
+            display: flex;
+            width: 80%;
+            margin: 0 10%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .contact__left {
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+
+                & > p {
+                    margin: 50px 0;
+                    color: gray;
+                    font-weight: 600;
+                }
+                & > span {
+                    display: flex;
+                    color: red;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+
+                    & > h4 {
+                        color: gray;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .contact__right {
+                & > form {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > input {
+                        border-radius: 25px 25px 25px 0;
+                        margin: 10px 0;
+                        padding: 0 15px;
+                        // width: 100%;
+                        outline: none;
+                        height: 50px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        border: solid 2px rgb(219, 219, 219);
+                    }
+
+                    & > textarea {
+                        border-radius: 25px 25px 25px 0;
+                        padding: 10px 15px;
+                        font-size: 17px;
+                        // width: 65vw;
+                        font-weight: 500;
+                        outline: none;
+                        margin: 10px 0 20px 0;
+                        border: solid 1px gray;
+                        resize: vertical;
+                    }
+
+                    ::placeholder {
+                        color: rgb(255, 148, 148);
+                    }
+                }
+            }
+        }
+    }
+}

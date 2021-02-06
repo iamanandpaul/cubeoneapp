@@ -1,58 +1,84 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import "./Header.scss";
 import LaunchIcon from "@material-ui/icons/Launch";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import CloseIcon from "@material-ui/icons/Close";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
   const [click, setclick] = useState(false);
   const handleClick = () => setclick(!click);
   const closeMobileMenu = () => setclick(false);
+  const scrollWithOffset = (el, offset) => {
+    const elementPosition = el.offsetTop - offset;
+    window.scroll({
+      top: elementPosition,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="header">
       <div className="header__logo">
-        <img src={logo} alt="oneapp" />
+        <a href="/" className="header__links header__home">
+          <img src={logo} alt="oneapp" />
+        </a>
       </div>
       <ul className={click ? "header__main active" : "header__main"}>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links header__home">
+          <HashLink smooth to="/#home" className="header__links header__home">
             Home
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink
+            scroll={(el) => scrollWithOffset(el, 75)}
+            to="/#about"
+            className="header__links"
+          >
             About
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink
+            scroll={(el) => scrollWithOffset(el, 75)}
+            to="/#features"
+            className="header__links"
+          >
             Features
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink
+            scroll={(el) => scrollWithOffset(el, 75)}
+            to="/#testimonials"
+            className="header__links"
+          >
             Testimonials
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink
+            scroll={(el) => scrollWithOffset(el, 75)}
+            to="/#contact"
+            className="header__links"
+          >
             Contact
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink to="/" className="header__links">
             Blog
             <LaunchIcon className="header__icons" />
-          </Link>
+          </HashLink>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
-          <Link to="/" className="header__links">
+          <HashLink to="/" className="header__links">
             cubeonebiz
             <LaunchIcon className="header__icons" />
-          </Link>
+          </HashLink>
         </li>
       </ul>
       <div className="header__click" onClick={handleClick}>

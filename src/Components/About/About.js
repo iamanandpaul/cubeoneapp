@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about__first">
         <Title heading="Why is it special?" />
         <div className="about__box">

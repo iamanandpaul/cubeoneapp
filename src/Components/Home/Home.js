@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home__contents">
         <h2>1</h2>
         <h1>oneapp</h1>

@@ -7,7 +7,7 @@ import features2 from "../../assets/core-img/about_img_2.png";
 
 function Features() {
   return (
-    <div className="features">
+    <div className="features" id="features">
       <div className="features__section">
         <Title heading="What’s in there for you ?" />
         <div className="features__main">

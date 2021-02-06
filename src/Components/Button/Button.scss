@@ -1,29 +1,31 @@
-.button__home {
-    padding: 12px 15px;
-    border-radius: 25px 25px 25px 0;
-    border: solid 2px rgb(194, 194, 194);
-    background-color: white;
-    transition: all 0.5s ease;
-    width: 200px;
-    outline: none;
+.button {
+    text-decoration: none;
+    .button__home {
+        padding: 12px 15px;
+        border-radius: 25px 25px 25px 0;
+        border: solid 2px rgb(194, 194, 194);
+        background-color: white;
+        transition: all 0.5s ease;
+        width: 200px;
+        outline: none;
 
-    & > div > h6 {
-        font-size: 16px;
-        font-weight: 550;
-        color: red;
+        & > div > h6 {
+            font-size: 16px;
+            font-weight: 550;
+            color: red;
+        }
+    }
+    .button__home:hover {
+        cursor: pointer;
+        background-color: red;
+        transition: all 0.5s ease;
+        border-color: white;
+
+        & > div > h6 {
+            color: white;
+        }
     }
 }
-.button__home:hover {
-    cursor: pointer;
-    background-color: red;
-    transition: all 0.5s ease;
-    border-color: white;
-
-    & > div > h6 {
-        color: white;
-    }
-}
-
 .button__about {
     display: flex;
     justify-content: center;
@@ -153,4 +155,25 @@
             color: white;
         }
     }
+}
+
+.button__contact {
+    padding: 12px 15px;
+    border-radius: 25px 25px 25px 0;
+    border: solid 2px rgb(194, 194, 194);
+    background-color: red;
+    transition: all 0.5s ease;
+    width: 200px;
+    outline: none;
+
+    & > div > h6 {
+        font-size: 16px;
+        font-weight: 650;
+        color: white;
+    }
+}
+.button__contact:hover {
+    cursor: pointer;
+    background-color: rgb(212, 19, 19);
+    transition: all 0.5s ease;
 }
