@@ -7,6 +7,7 @@ import Features from "./Components/Features/Features";
 import Download from "./Components/Download/Download";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Scroll from "./Components/Scroll/Scroll";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Download />
       <Contact />
       <Footer />
+      <Scroll />
     </Router>
   );
 }
