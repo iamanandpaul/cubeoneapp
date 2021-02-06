@@ -5,7 +5,7 @@ import "./Contact.scss";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact__main">
         <div className="contact__left">
           <Title name="title__contact" heading="Get in touch with us!" />

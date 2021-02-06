@@ -160,10 +160,10 @@
 .button__contact {
     padding: 12px 15px;
     border-radius: 25px 25px 25px 0;
-    border: solid 2px rgb(194, 194, 194);
+    border: none;
     background-color: red;
     transition: all 0.5s ease;
-    width: 200px;
+    width: 180px;
     outline: none;
 
     & > div > h6 {

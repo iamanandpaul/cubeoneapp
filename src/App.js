@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import Features from "./Components/Features/Features";
 import Download from "./Components/Download/Download";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <Download />
       <Contact />
+      <Footer />
     </Router>
   );
 }

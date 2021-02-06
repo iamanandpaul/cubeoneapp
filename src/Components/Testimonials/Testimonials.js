@@ -5,43 +5,11 @@ import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import AliceCarousel from "react-alice-carousel";
-
 function Testimonials() {
-  const items = [
-    <div className="item" data-value="1">
-      1
-    </div>,
-    <div className="item" data-value="2">
-      2
-    </div>,
-    <div className="item" data-value="3">
-      3
-    </div>,
-    <div className="item" data-value="4">
-      4
-    </div>,
-    <div className="item" data-value="5">
-      5
-    </div>,
-  ];
-
   return (
     <div className="testimonials" id="testimonials">
       <Title heading="Testimonials" />
 
-      <AliceCarousel
-        autoHeight
-        autoWidth
-        infinite
-        animationType="fadeout"
-        animationDuration={800}
-        disableButtonsControls
-        items={items}
-        mouseTracking
-        className="testimonials__carousel"
-      />
       <Carousel
         showStatus={true}
         showThumbs={false}
